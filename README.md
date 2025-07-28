@@ -162,9 +162,4 @@ Feel free to fork this repository, suggest improvements, or create pull requests
 ## 📬 Contact
 
 - 📧 priyanshu.nayak.555@gmail.com
-
 ---
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
