@@ -3,7 +3,8 @@ import requests
 
 st.title("🧠 RAG Chatbot with Local LLM")
 
-API_BASE = "http://localhost:8000"  # Adjust if backend runs on a different port
+# API_BASE = "http://localhost:8000"
+API_BASE ="https://my-rag-backend.onrender.com" # Adjust if backend runs on a different port
 
 # Sidebar selection
 option = st.sidebar.selectbox("Choose Action", ["Upload File", "Ask Question"])
