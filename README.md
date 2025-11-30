@@ -60,12 +60,11 @@ Ensure you have Streamlit and FastAPI installed:
 pip install streamlit fastapi
 ```
 
-### 4. Start Qdrant (Vector Database)
+### 4. Start Ollama from your Terminal
 
-> You must have Docker installed.
 
 ```bash
-docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant
+ollama serve 
 ```
 
 ### 5. (Optional) Set OpenAI API Key
@@ -106,7 +105,8 @@ streamlit run app.py
 - `qdrant-client` – To store and search vector embeddings  
 - `langchain` – For prompt chaining and LLM integration  
 - `uvicorn` – ASGI server for FastAPI  
-- `python-docx`, `PyMuPDF`, `pandas`, `openpyxl`, `xlrd` – For text extraction  
+- `python-docx`, `PyMuPDF`, `pandas`, `openpyxl`, `xlrd` – For text extraction
+
 
 👉 Everything is listed in the `requirements.txt` file.
 
@@ -138,7 +138,9 @@ The RAG Chatbot follows this intelligent pipeline:
 ├── utils.py               # Text chunking utilities
 ├── requirements.txt       # All dependencies
 ├── README.md              # This documentation file
-└── screenshot.png         # UI screenshot (optional)
+├── RUN_INSTRUCTIONS.md    # This file tells about how to run This project locally
+├── screenshot.png         # UI screenshot (optional)
+└── Video Clip             # Working video
 ```
 
 ---
