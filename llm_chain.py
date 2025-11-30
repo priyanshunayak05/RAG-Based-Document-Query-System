@@ -1,6 +1,6 @@
 
 
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain_ollama import OllamaLLM
 from dotenv import load_dotenv
 import os
@@ -9,7 +9,7 @@ load_dotenv()
 
 def get_llm(provider="local"):
     if provider == "local":
-        return OllamaLLM(model="granite3.2:8b")
+        return OllamaLLM(model="llama3.2:1b")
     else:
         raise ValueError("Unsupported provider: choose 'local'.")
 
